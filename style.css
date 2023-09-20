@@ -1,4 +1,9 @@
+.parent {
+    display: flex;
+    width: 60%;
+    flex-flow: row wrap;
 
+}
 
 body,
 html,
@@ -13,15 +18,15 @@ html,
     height: 50vh;
     width: 27vw;
     background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     border-radius: 25px;
+    flex-direction: column;
+    flex: auto;
+
 }
 
 .card-img {
-    width: 60%;
+    width: 65%;
 }
 
 body {
@@ -36,3 +41,5 @@ body {
 .text-color {
     color: dimgray;
 }
+
+
