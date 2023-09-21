@@ -1,6 +1,6 @@
 .parent {
     display: flex;
-    width: 60%;
+    width: 100%;
     flex-flow: row wrap;
 
 }
@@ -8,38 +8,42 @@
 body,
 html,
 * {
-    font-size: 30px;
+    font-size: 25px;
     box-sizing: border-box;
-    margin: 10px;
-    padding: 5px;
+    margin: 20px;
+    padding: 0px;
 }
 
 .card {
-    height: 50vh;
+    height: auto;
     width: 27vw;
-    background-color: antiquewhite;
-    align-items: center;
+    background-color: #fff2e6;
     border-radius: 25px;
-    flex-direction: column;
-    flex: auto;
+    text-align: center;
+    display: flexbox;
+    box-shadow: 0 10px 10px #ff8080 ;
 
 }
 
 .card-img {
     width: 65%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 body {
-    background-color: #87464d;
+    background-color: #e6b3b3;
 }
 
 .centre {
     color: aliceblue;
     text-align: center;
+    font-size: 45px;
 }
 
 .text-color {
     color: dimgray;
+    display: flexbox;
 }
 
 
