@@ -22,7 +22,13 @@ html,
     text-align: center;
     display: flexbox;
     box-shadow: 0 10px 10px #ff8080 ;
+    transition: all 0.5s;
 }
+
+.char-ani:hover {
+    transform: scale(1.5);
+}
+
 
 .card-img {
     width: 65%;
