@@ -16,17 +16,19 @@ html,
 
 .card {
     height: auto;
-    width: 28vw;
+    width: 21vw;
     background-color: #fff2e6;
     border-radius: 25px;
+    justify-content: space-between;
     text-align: center;
     display: flexbox;
     box-shadow: 0 10px 10px #ff8080 ;
-    transition: all 0.5s;
+    transition: all 1s ease-in-out;
 }
 
-.char-ani:hover {
-    transform: scale(1.5);
+.charani:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(2);
 }
 
 
