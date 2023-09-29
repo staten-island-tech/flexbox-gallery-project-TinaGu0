@@ -24,13 +24,16 @@ html,
     display: flexbox;
     box-shadow: 0 10px 10px #ff8080 ;
     transition: all 1s;
-    animation: alternate;
+    animation: ani5 5s;
+    animation-play-state: paused;
 }
 
 .card-img {
     width: 65%;
     margin-left: 10%;
     margin-right: 10%;
+    animation: ani 1s infinite;
+    animation-play-state: paused;
 }
 
 body {
@@ -43,15 +46,98 @@ body {
     text-align: center;
     font-size: 45px;
     font-family: sans-serif;
+    animation: ani4 5s;     
 }
 
 .text-color {
     color: dimgray;
     display: flexbox;
+    animation: ani2 3s infinite;
+    animation-play-state: paused;
+}
+
+.header-color {
+    color: dimgray;
+    display: flexbox;
+    animation: ani3 3s infinite;
+    animation-play-state: paused;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); 
+    animation-play-state: running;
+} 
+
+.card:hover .card-img {
+    animation-play-state: running;
 }
+
+.card:hover .text-color {
+    animation-play-state: running;
+}
+
+.card:hover .header-color {
+    animation-play-state: running;
+}
+
+
+@keyframes ani {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes ani3 {
+    0% {
+       transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes ani4 {
+    0% {
+        translate: 0px;
+    }
+    50% {
+        translate: 200px;
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes ani5 {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 
