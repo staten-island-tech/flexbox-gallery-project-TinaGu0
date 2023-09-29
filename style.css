@@ -139,5 +139,18 @@ body {
 }
 
 
+@media screen and (max-width: 1180px) {
+    .card {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card {
+        width: 60%;
+    }
+}
+
+
+
 
 
